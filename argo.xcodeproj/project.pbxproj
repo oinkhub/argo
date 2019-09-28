@@ -11,9 +11,7 @@
 		DA8E4F0F233F6DB0001B2F74 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8E4F0D233F6DB0001B2F74 /* Interface.storyboard */; };
 		DA8E4F11233F6DB1001B2F74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8E4F10233F6DB1001B2F74 /* Assets.xcassets */; };
 		DA8E4F18233F6DB1001B2F74 /* argo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA8E4F17233F6DB1001B2F74 /* argo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DA8E4F1D233F6DB1001B2F74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E4F1C233F6DB1001B2F74 /* ContentView.swift */; };
-		DA8E4F1F233F6DB1001B2F74 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E4F1E233F6DB1001B2F74 /* HostingController.swift */; };
-		DA8E4F21233F6DB1001B2F74 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E4F20233F6DB1001B2F74 /* ExtensionDelegate.swift */; };
+		DA8E4F1F233F6DB1001B2F74 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E4F1E233F6DB1001B2F74 /* Controller.swift */; };
 		DA8E4F23233F6DB2001B2F74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8E4F22233F6DB2001B2F74 /* Assets.xcassets */; };
 		DA8E4F26233F6DB2001B2F74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8E4F25233F6DB2001B2F74 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -67,9 +65,7 @@
 		DA8E4F10233F6DB1001B2F74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8E4F12233F6DB1001B2F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8E4F17233F6DB1001B2F74 /* argo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "argo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA8E4F1C233F6DB1001B2F74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DA8E4F1E233F6DB1001B2F74 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
-		DA8E4F20233F6DB1001B2F74 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DA8E4F1E233F6DB1001B2F74 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		DA8E4F22233F6DB2001B2F74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8E4F25233F6DB2001B2F74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA8E4F27233F6DB2001B2F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,9 +114,7 @@
 		DA8E4F1B233F6DB1001B2F74 /* argo WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				DA8E4F1C233F6DB1001B2F74 /* ContentView.swift */,
-				DA8E4F1E233F6DB1001B2F74 /* HostingController.swift */,
-				DA8E4F20233F6DB1001B2F74 /* ExtensionDelegate.swift */,
+				DA8E4F1E233F6DB1001B2F74 /* Controller.swift */,
 				DA8E4F22233F6DB2001B2F74 /* Assets.xcassets */,
 				DA8E4F27233F6DB2001B2F74 /* Info.plist */,
 				DA8E4F24233F6DB2001B2F74 /* Preview Content */,
@@ -264,9 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA8E4F1F233F6DB1001B2F74 /* HostingController.swift in Sources */,
-				DA8E4F1D233F6DB1001B2F74 /* ContentView.swift in Sources */,
-				DA8E4F21233F6DB1001B2F74 /* ExtensionDelegate.swift in Sources */,
+				DA8E4F1F233F6DB1001B2F74 /* Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
