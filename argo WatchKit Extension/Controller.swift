@@ -3,14 +3,14 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-final class User: ObservableObject {
+final private class User: ObservableObject {
     @Published var heading = Double()
 }
 
 struct Content: View {
-    @ObservedObject var user: User
+    @ObservedObject fileprivate var user: User
     
-    var body: some View { Image("heading").rotationEffect(.radians(user.heading)) }
+    var body: some View { Image("heading").rotationEffect(.radians(user.heading)).animation(.easeOut) }
 }
 
 final class Delegate: NSObject, WKExtensionDelegate {
@@ -26,7 +26,7 @@ final class Delegate: NSObject, WKExtensionDelegate {
 }
 
 final class Controller: WKHostingController<Content>, CLLocationManagerDelegate {
-    @ObservedObject var user = User()
+    private let user = User()
     override var body: Content { Content(user: user) }
     
     override func didAppear() {
