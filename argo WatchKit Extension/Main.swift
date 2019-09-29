@@ -3,16 +3,19 @@ import SwiftUI
 struct Main: View {
     @ObservedObject var user: User
     @ObservedObject var marks: Marks
+    var add: (() -> Void)!
 
     var body: some View {
         List {
-            Add()
-            Section {
-                ForEach(marks.items, id: \.self) {
-                    Mark(mark: $0)
+            Add().onTapGesture(perform: add)
+            Section(header: Text(.init("Main.header"))) {
+                ForEach(marks.items, id: \.self) { item in
+                    NavigationLink(destination: Navigation(user: self.user, mark: item)) {
+                        Mark(mark: item)
+                    }
                 }
             }
-        }.navigationBarTitle("Argo")
+        }.navigationBarTitle("Main.title")
     }
 }
 private struct Add: View {
@@ -21,7 +24,7 @@ private struct Add: View {
             Image(systemName: "plus.circle.fill").padding(.leading, 5)
             .foregroundColor(Color("halo"))
             
-            Text("Add").padding(.leading, 2)
+            Text(.init("Main.add")).padding(.leading, 2)
         }
     }
 }

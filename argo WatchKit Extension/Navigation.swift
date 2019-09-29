@@ -2,6 +2,7 @@ import SwiftUI
 
 struct Navigation: View {
     @ObservedObject var user: User
+    let mark: Marks.Item
     
     var body: some View {
         ZStack {
