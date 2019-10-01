@@ -1,21 +1,28 @@
 import SwiftUI
 
 struct Main: View {
-    @ObservedObject var user: User
     @ObservedObject var places: Places
     @State private var creating = false
     var add: (String) -> Void
 
     var body: some View {
         List {
-            Add()
-                .onTapGesture {
+            HStack {
+                Image(systemName: "plus.circle.fill")
+                    .padding(.leading, 5)
+                    .foregroundColor(Color("halo"))
+                
+                Text(.init("Main.add"))
+                    .padding(.leading, 2)
+            }
+            .onTapGesture {
                 self.creating = true
             }
+            
             Section(header: Text(.init("Main.header"))) {
                 ForEach(places.session.items.reversed(), id: \.self) { item in
-                    NavigationLink(destination: Navigation(user: self.user, mark: item)) {
-                        Mark(mark: item)
+                    NavigationLink(destination: Navigation(places: self.places, item: item)) {
+                        Text(item.name)
                     }
                 }
             }
@@ -27,23 +34,12 @@ struct Main: View {
                 self.creating = false
             }
         }
-    }
-}
-private struct Add: View {
-    var body: some View {
-        HStack {
-            Image(systemName: "plus.circle.fill").padding(.leading, 5)
-            .foregroundColor(Color("halo"))
-            
-            Text(.init("Main.add")).padding(.leading, 2)
+        .alert(isPresented: self.$places.error) {
+            Alert(title: Text("Main.alert"), message: Text(self.places.message), dismissButton:
+                .default(Text("Main.continue")) {
+                    self.places.error = false
+                }
+            )
         }
-    }
-}
-
-private struct Mark: View {
-    var mark: Session.Item
-
-    var body: some View {
-        Text(mark.name)
     }
 }

@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct Navigation: View {
-    @ObservedObject var user: User
-    let mark: Session.Item
+    @ObservedObject var places: Places
+    var item: Session.Item
     
     var body: some View {
         ZStack {
@@ -18,7 +18,9 @@ struct Navigation: View {
                         }.stroke(Color("halo"), style: .init(lineWidth: p == 0 ? 3 : 1, lineCap: .round)).rotationEffect(.degrees(Double(p) * 2.5))
                     }
                 }
-            }.rotationEffect(.degrees(self.user.heading)).animation(.easeOut)
+            }
+            .rotationEffect(.degrees(places.heading)).animation(.easeOut)
+            .navigationBarTitle(item.name)
         }
     }
 }

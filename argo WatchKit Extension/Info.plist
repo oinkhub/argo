@@ -30,8 +30,8 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
-	<key>WKExtensionDelegateClassName</key>
-	<string>$(PRODUCT_MODULE_NAME).Delegate</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Argo can give you navigation</string>
 	<key>WKWatchOnly</key>
 	<true/>
 </dict>
