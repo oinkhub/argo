@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA1A04BD23438EDC0030640C /* Argo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA8E4F17233F6DB1001B2F74 /* Argo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA68294F2340F96E00FD3ADD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA68294D2340F96E00FD3ADD /* Localizable.strings */; };
-		DA74DAA32343896700B49BF2 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA8E4F17233F6DB1001B2F74 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA8E4F09233F6DB0001B2F74 /* App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DA8E4F08233F6DB0001B2F74 /* App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA8E4F0F233F6DB0001B2F74 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8E4F0D233F6DB0001B2F74 /* Interface.storyboard */; };
 		DA8E4F11233F6DB1001B2F74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8E4F10233F6DB1001B2F74 /* Assets.xcassets */; };
@@ -21,14 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DA74DAA02343895700B49BF2 /* PBXContainerItemProxy */ = {
+		DA1A04BB23438ED20030640C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA8E4EFE233F6DB0001B2F74 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DA8E4F07233F6DB0001B2F74;
 			remoteInfo = App;
 		};
-		DA74DAA42343896700B49BF2 /* PBXContainerItemProxy */ = {
+		DA1A04BE23438EDC0030640C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA8E4EFE233F6DB0001B2F74 /* Project object */;
 			proxyType = 1;
@@ -38,13 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DA74DAA62343896700B49BF2 /* Embed App Extensions */ = {
+		DA1A04C023438EDC0030640C /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				DA74DAA32343896700B49BF2 /* Extension.appex in Embed App Extensions */,
+				DA1A04BD23438EDC0030640C /* Argo.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,12 +64,12 @@
 
 /* Begin PBXFileReference section */
 		DA68294E2340F96E00FD3ADD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		DA8E4F04233F6DB0001B2F74 /* Argo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Argo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8E4F04233F6DB0001B2F74 /* Wrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8E4F08233F6DB0001B2F74 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8E4F0E233F6DB0001B2F74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		DA8E4F10233F6DB1001B2F74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8E4F12233F6DB1001B2F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA8E4F17233F6DB1001B2F74 /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8E4F17233F6DB1001B2F74 /* Argo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Argo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8E4F22233F6DB2001B2F74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8E4F27233F6DB2001B2F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAC947D52340D597007F4810 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
@@ -110,9 +110,9 @@
 		DA8E4F05233F6DB0001B2F74 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA8E4F04233F6DB0001B2F74 /* Argo.app */,
+				DA8E4F04233F6DB0001B2F74 /* Wrapper.app */,
 				DA8E4F08233F6DB0001B2F74 /* App.app */,
-				DA8E4F17233F6DB1001B2F74 /* Extension.appex */,
+				DA8E4F17233F6DB1001B2F74 /* Argo.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,11 +155,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				DA74DAA12343895700B49BF2 /* PBXTargetDependency */,
+				DA1A04BC23438ED20030640C /* PBXTargetDependency */,
 			);
 			name = Argo;
 			productName = argo;
-			productReference = DA8E4F04233F6DB0001B2F74 /* Argo.app */;
+			productReference = DA8E4F04233F6DB0001B2F74 /* Wrapper.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		DA8E4F07233F6DB0001B2F74 /* App */ = {
@@ -167,12 +167,12 @@
 			buildConfigurationList = DA8E4F2E233F6DB2001B2F74 /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
 				DA8E4F06233F6DB0001B2F74 /* Resources */,
-				DA74DAA62343896700B49BF2 /* Embed App Extensions */,
+				DA1A04C023438EDC0030640C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DA74DAA52343896700B49BF2 /* PBXTargetDependency */,
+				DA1A04BF23438EDC0030640C /* PBXTargetDependency */,
 			);
 			name = App;
 			productName = "argo WatchKit App";
@@ -193,7 +193,7 @@
 			);
 			name = Extension;
 			productName = "argo WatchKit Extension";
-			productReference = DA8E4F17233F6DB1001B2F74 /* Extension.appex */;
+			productReference = DA8E4F17233F6DB1001B2F74 /* Argo.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -281,15 +281,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DA74DAA12343895700B49BF2 /* PBXTargetDependency */ = {
+		DA1A04BC23438ED20030640C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DA8E4F07233F6DB0001B2F74 /* App */;
-			targetProxy = DA74DAA02343895700B49BF2 /* PBXContainerItemProxy */;
+			targetProxy = DA1A04BB23438ED20030640C /* PBXContainerItemProxy */;
 		};
-		DA74DAA52343896700B49BF2 /* PBXTargetDependency */ = {
+		DA1A04BF23438EDC0030640C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DA8E4F16233F6DB1001B2F74 /* Extension */;
-			targetProxy = DA74DAA42343896700B49BF2 /* PBXContainerItemProxy */;
+			targetProxy = DA1A04BE23438EDC0030640C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -443,8 +443,8 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1;
-				PRODUCT_BUNDLE_IDENTIFIER = argonaut.argo.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_BUNDLE_IDENTIFIER = argo.watch.app.extension;
+				PRODUCT_NAME = Argo;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -466,8 +466,8 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1;
-				PRODUCT_BUNDLE_IDENTIFIER = argonaut.argo.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_BUNDLE_IDENTIFIER = argo.watch.app.extension;
+				PRODUCT_NAME = Argo;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -481,10 +481,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				IBSC_MODULE = Extension;
+				IBSC_MODULE = Argo;
 				INFOPLIST_FILE = "argo WatchKit App/Info.plist";
 				MARKETING_VERSION = 1;
-				PRODUCT_BUNDLE_IDENTIFIER = argonaut.argo.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = argo.watch.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -499,10 +499,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				IBSC_MODULE = Extension;
+				IBSC_MODULE = Argo;
 				INFOPLIST_FILE = "argo WatchKit App/Info.plist";
 				MARKETING_VERSION = 1;
-				PRODUCT_BUNDLE_IDENTIFIER = argonaut.argo.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = argo.watch.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -518,8 +518,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				MARKETING_VERSION = 1;
-				PRODUCT_BUNDLE_IDENTIFIER = argonaut.argo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = argo.watch;
+				PRODUCT_NAME = Wrapper;
 			};
 			name = Debug;
 		};
@@ -530,8 +530,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				MARKETING_VERSION = 1;
-				PRODUCT_BUNDLE_IDENTIFIER = argonaut.argo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = argo.watch;
+				PRODUCT_NAME = Wrapper;
 			};
 			name = Release;
 		};
