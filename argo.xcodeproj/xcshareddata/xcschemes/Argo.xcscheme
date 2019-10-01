@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DA8E4F07233F6DB0001B2F74"
-               BuildableName = "Argo.app"
+               BuildableName = "App.app"
                BlueprintName = "App"
                ReferencedContainer = "container:argo.xcodeproj">
             </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DA8E4F07233F6DB0001B2F74"
-            BuildableName = "Argo.app"
+            BuildableName = "App.app"
             BlueprintName = "App"
             ReferencedContainer = "container:argo.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DA8E4F07233F6DB0001B2F74"
-            BuildableName = "Argo.app"
+            BuildableName = "App.app"
             BlueprintName = "App"
             ReferencedContainer = "container:argo.xcodeproj">
          </BuildableReference>
@@ -89,7 +89,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DA8E4F07233F6DB0001B2F74"
-            BuildableName = "Argo.app"
+            BuildableName = "App.app"
             BlueprintName = "App"
             ReferencedContainer = "container:argo.xcodeproj">
          </BuildableReference>

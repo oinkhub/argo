@@ -9,7 +9,7 @@
         <!--Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <hostingController id="3mp-fW-waa" customClass="Controller" customModule="argo_WatchKit_Extension"/>
+                <hostingController id="3mp-fW-waa" customClass="Controller" customModule="Extension"/>
             </objects>
             <point key="canvasLocation" x="34" y="31"/>
         </scene>
