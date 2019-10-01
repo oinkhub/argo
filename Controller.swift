@@ -9,25 +9,27 @@ final class Places: ObservableObject {
     var message = ""
 }
 
-final class Controller: WKHostingController<Main>, CLLocationManagerDelegate {
-    private let manager = CLLocationManager()
-    private let places = Places()
+final class Controller: WKHostingController<Content> {
+    fileprivate let places = Places()
     
-    override var body: Main {
-        .init(places: places) {
+    override var body: Content {
+        Content(places: places) {
             var item = Session.Item()
             item.name = $0.isEmpty ? NSLocalizedString("Main.noName", comment: ""): $0
             self.places.session.items.append(item)
             self.places.session.save()
     } }
+}
+
+final class Delegate: NSObject, WKExtensionDelegate, CLLocationManagerDelegate {
+    fileprivate let manager = CLLocationManager()
+    private var places: Places { (WKExtension.shared().rootInterfaceController as! Controller).places }
     
-    override func didAppear() {
-        super.didAppear()
+    func applicationDidFinishLaunching() {
         Session.load { self.places.session = $0 }
     }
     
-    override func willActivate() {
-        super.willActivate()
+    func applicationDidBecomeActive() {
         manager.delegate = self
         manager.startUpdatingHeading()
         
@@ -35,29 +37,21 @@ final class Controller: WKHostingController<Main>, CLLocationManagerDelegate {
             manager.startUpdatingLocation()
         }
     }
-    
-    override func didDeactivate() {
-        super.didDeactivate()
+
+    func applicationWillResignActive() {
         manager.stopUpdatingHeading()
         manager.stopUpdatingLocation()
-    }
-    
-    func locationManager(_: CLLocationManager, didFailWithError: Error) {
-        DispatchQueue.main.async {
-            self.places.message = didFailWithError.localizedDescription
-            self.places.error = true
-        }
     }
     
     func locationManager(_: CLLocationManager, didUpdateHeading: CLHeading) {
         guard didUpdateHeading.headingAccuracy >= 0, didUpdateHeading.trueHeading >= 0 else { return }
         places.heading = -(didUpdateHeading.trueHeading > 180 ? didUpdateHeading.trueHeading - 360 : didUpdateHeading.trueHeading)
     }
-    
+        
     func locationManager(_: CLLocationManager, didUpdateLocations: [CLLocation]) {
-        print(didUpdateLocations.first)
+//        print(didUpdateLocations.first)
     }
-    
+        
     func locationManager(_: CLLocationManager, didChangeAuthorization: CLAuthorizationStatus) {
         switch didChangeAuthorization {
         case .denied:

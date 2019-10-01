@@ -11,9 +11,8 @@
 		DA1A04C523438FAA0030640C /* App.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1A04C423438FAA0030640C /* App.xcassets */; };
 		DA1A04CD23438FC60030640C /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A04C723438FC50030640C /* Session.swift */; };
 		DA1A04CE23438FC60030640C /* Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A04C823438FC50030640C /* Create.swift */; };
-		DA1A04CF23438FC60030640C /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A04C923438FC50030640C /* Navigation.swift */; };
 		DA1A04D023438FC60030640C /* Extension.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1A04CA23438FC50030640C /* Extension.xcassets */; };
-		DA1A04D123438FC60030640C /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A04CB23438FC60030640C /* Main.swift */; };
+		DA1A04D123438FC60030640C /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A04CB23438FC60030640C /* Content.swift */; };
 		DA1A04D223438FC60030640C /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A04CC23438FC60030640C /* Controller.swift */; };
 		DA1A04D523438FD40030640C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA1A04D323438FD40030640C /* Localizable.strings */; };
 		DA1A04DC234390480030640C /* Argo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA1A04C623438FC50030640C /* Argo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -67,15 +66,14 @@
 		DA1A04C623438FC50030640C /* Argo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Argo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1A04C723438FC50030640C /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		DA1A04C823438FC50030640C /* Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Create.swift; sourceTree = "<group>"; };
-		DA1A04C923438FC50030640C /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		DA1A04CA23438FC50030640C /* Extension.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Extension.xcassets; sourceTree = "<group>"; };
-		DA1A04CB23438FC60030640C /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		DA1A04CB23438FC60030640C /* Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		DA1A04CC23438FC60030640C /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		DA1A04D423438FD40030640C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA1A04D623438FDF0030640C /* Extension.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Extension.plist; sourceTree = "<group>"; };
 		DA1A04D723438FDF0030640C /* App.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = App.plist; sourceTree = "<group>"; };
 		DA1A04D8234390190030640C /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA8E4F04233F6DB0001B2F74 /* Wrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Wrapper.app; path = "/devel/argo/build/Debug-iphoneos/Wrapper.app"; sourceTree = "<absolute>"; };
+		DAFD0118234390C900A07FCC /* Wrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,13 +98,13 @@
 			isa = PBXGroup;
 			children = (
 				DA1A04D8234390190030640C /* App.app */,
+				DAFD0118234390C900A07FCC /* Wrapper.app */,
 				DA1A04C623438FC50030640C /* Argo.appex */,
 				DA1A04D723438FDF0030640C /* App.plist */,
 				DA1A04D623438FDF0030640C /* Extension.plist */,
+				DA1A04CB23438FC60030640C /* Content.swift */,
 				DA1A04CC23438FC60030640C /* Controller.swift */,
 				DA1A04C823438FC50030640C /* Create.swift */,
-				DA1A04CB23438FC60030640C /* Main.swift */,
-				DA1A04C923438FC50030640C /* Navigation.swift */,
 				DA1A04C723438FC50030640C /* Session.swift */,
 				DA1A04C423438FAA0030640C /* App.xcassets */,
 				DA1A04CA23438FC50030640C /* Extension.xcassets */,
@@ -133,7 +131,7 @@
 			);
 			name = Argo;
 			productName = argo;
-			productReference = DA8E4F04233F6DB0001B2F74 /* Wrapper.app */;
+			productReference = DAFD0118234390C900A07FCC /* Wrapper.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		DA8E4F07233F6DB0001B2F74 /* App */ = {
@@ -247,9 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA1A04D223438FC60030640C /* Controller.swift in Sources */,
-				DA1A04CF23438FC60030640C /* Navigation.swift in Sources */,
 				DA1A04CD23438FC60030640C /* Session.swift in Sources */,
-				DA1A04D123438FC60030640C /* Main.swift in Sources */,
+				DA1A04D123438FC60030640C /* Content.swift in Sources */,
 				DA1A04CE23438FC60030640C /* Create.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

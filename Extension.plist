@@ -32,6 +32,8 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Argo can give you navigation</string>
+    <key>WKExtensionDelegateClassName</key>
+    <string>$(PRODUCT_MODULE_NAME).Delegate</string>
 	<key>WKWatchOnly</key>
 	<true/>
 </dict>
