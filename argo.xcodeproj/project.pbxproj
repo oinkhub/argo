@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA1A04BD23438EDC0030640C /* Argo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA8E4F17233F6DB1001B2F74 /* Argo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DA68294F2340F96E00FD3ADD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA68294D2340F96E00FD3ADD /* Localizable.strings */; };
-		DA8E4F09233F6DB0001B2F74 /* App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DA8E4F08233F6DB0001B2F74 /* App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DA8E4F0F233F6DB0001B2F74 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8E4F0D233F6DB0001B2F74 /* Interface.storyboard */; };
-		DA8E4F11233F6DB1001B2F74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8E4F10233F6DB1001B2F74 /* Assets.xcassets */; };
-		DA8E4F23233F6DB2001B2F74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8E4F22233F6DB2001B2F74 /* Assets.xcassets */; };
-		DAC947D62340D597007F4810 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC947D52340D597007F4810 /* Main.swift */; };
-		DAC947D82340D5C0007F4810 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC947D72340D5C0007F4810 /* Controller.swift */; };
-		DAC947DA2340D5CE007F4810 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC947D92340D5CE007F4810 /* Navigation.swift */; };
-		DAE188552343464C00B45C66 /* Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE188542343464C00B45C66 /* Create.swift */; };
-		DAE188572343517300B45C66 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE188562343517300B45C66 /* Session.swift */; };
+		DA1A04C323438FA00030640C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1A04C123438FA00030640C /* Interface.storyboard */; };
+		DA1A04C523438FAA0030640C /* App.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1A04C423438FAA0030640C /* App.xcassets */; };
+		DA1A04CD23438FC60030640C /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A04C723438FC50030640C /* Session.swift */; };
+		DA1A04CE23438FC60030640C /* Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A04C823438FC50030640C /* Create.swift */; };
+		DA1A04CF23438FC60030640C /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A04C923438FC50030640C /* Navigation.swift */; };
+		DA1A04D023438FC60030640C /* Extension.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1A04CA23438FC50030640C /* Extension.xcassets */; };
+		DA1A04D123438FC60030640C /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A04CB23438FC60030640C /* Main.swift */; };
+		DA1A04D223438FC60030640C /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A04CC23438FC60030640C /* Controller.swift */; };
+		DA1A04D523438FD40030640C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA1A04D323438FD40030640C /* Localizable.strings */; };
+		DA1A04DC234390480030640C /* Argo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA1A04C623438FC50030640C /* Argo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA1A04DF234390500030640C /* App.app in Resources */ = {isa = PBXBuildFile; fileRef = DA1A04D8234390190030640C /* App.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DA1A04BB23438ED20030640C /* PBXContainerItemProxy */ = {
+		DA1A04D9234390420030640C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA8E4EFE233F6DB0001B2F74 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DA8E4F07233F6DB0001B2F74;
 			remoteInfo = App;
 		};
-		DA1A04BE23438EDC0030640C /* PBXContainerItemProxy */ = {
+		DA1A04DD234390480030640C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA8E4EFE233F6DB0001B2F74 /* Project object */;
 			proxyType = 1;
@@ -44,7 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				DA1A04BD23438EDC0030640C /* Argo.appex in Embed App Extensions */,
+				DA1A04DC234390480030640C /* Argo.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,7 +55,6 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				DA8E4F09233F6DB0001B2F74 /* App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,20 +62,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DA68294E2340F96E00FD3ADD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		DA8E4F04233F6DB0001B2F74 /* Wrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA8E4F08233F6DB0001B2F74 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA8E4F0E233F6DB0001B2F74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		DA8E4F10233F6DB1001B2F74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DA8E4F12233F6DB1001B2F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA8E4F17233F6DB1001B2F74 /* Argo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Argo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA8E4F22233F6DB2001B2F74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DA8E4F27233F6DB2001B2F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAC947D52340D597007F4810 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
-		DAC947D72340D5C0007F4810 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
-		DAC947D92340D5CE007F4810 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
-		DAE188542343464C00B45C66 /* Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create.swift; sourceTree = "<group>"; };
-		DAE188562343517300B45C66 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		DA1A04C223438FA00030640C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DA1A04C423438FAA0030640C /* App.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = App.xcassets; sourceTree = "<group>"; };
+		DA1A04C623438FC50030640C /* Argo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Argo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1A04C723438FC50030640C /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		DA1A04C823438FC50030640C /* Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Create.swift; sourceTree = "<group>"; };
+		DA1A04C923438FC50030640C /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		DA1A04CA23438FC50030640C /* Extension.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Extension.xcassets; sourceTree = "<group>"; };
+		DA1A04CB23438FC60030640C /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		DA1A04CC23438FC60030640C /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		DA1A04D423438FD40030640C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA1A04D623438FDF0030640C /* Extension.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Extension.plist; sourceTree = "<group>"; };
+		DA1A04D723438FDF0030640C /* App.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = App.plist; sourceTree = "<group>"; };
+		DA1A04D8234390190030640C /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8E4F04233F6DB0001B2F74 /* Wrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Wrapper.app; path = "/devel/argo/build/Debug-iphoneos/Wrapper.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +89,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DA74DAA22343896700B49BF2 /* Frameworks */ = {
+		DA1A04DB234390480030640C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -100,46 +99,21 @@
 		DA8E4EFD233F6DB0001B2F74 = {
 			isa = PBXGroup;
 			children = (
-				DA8E4F0C233F6DB0001B2F74 /* argo WatchKit App */,
-				DA8E4F1B233F6DB1001B2F74 /* argo WatchKit Extension */,
-				DA8E4F05233F6DB0001B2F74 /* Products */,
-				DA74DAA22343896700B49BF2 /* Frameworks */,
+				DA1A04D8234390190030640C /* App.app */,
+				DA1A04C623438FC50030640C /* Argo.appex */,
+				DA1A04D723438FDF0030640C /* App.plist */,
+				DA1A04D623438FDF0030640C /* Extension.plist */,
+				DA1A04CC23438FC60030640C /* Controller.swift */,
+				DA1A04C823438FC50030640C /* Create.swift */,
+				DA1A04CB23438FC60030640C /* Main.swift */,
+				DA1A04C923438FC50030640C /* Navigation.swift */,
+				DA1A04C723438FC50030640C /* Session.swift */,
+				DA1A04C423438FAA0030640C /* App.xcassets */,
+				DA1A04CA23438FC50030640C /* Extension.xcassets */,
+				DA1A04DB234390480030640C /* Frameworks */,
+				DA1A04C123438FA00030640C /* Interface.storyboard */,
+				DA1A04D323438FD40030640C /* Localizable.strings */,
 			);
-			sourceTree = "<group>";
-		};
-		DA8E4F05233F6DB0001B2F74 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DA8E4F04233F6DB0001B2F74 /* Wrapper.app */,
-				DA8E4F08233F6DB0001B2F74 /* App.app */,
-				DA8E4F17233F6DB1001B2F74 /* Argo.appex */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DA8E4F0C233F6DB0001B2F74 /* argo WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				DA8E4F0D233F6DB0001B2F74 /* Interface.storyboard */,
-				DA8E4F10233F6DB1001B2F74 /* Assets.xcassets */,
-				DA8E4F12233F6DB1001B2F74 /* Info.plist */,
-			);
-			path = "argo WatchKit App";
-			sourceTree = "<group>";
-		};
-		DA8E4F1B233F6DB1001B2F74 /* argo WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				DA8E4F27233F6DB2001B2F74 /* Info.plist */,
-				DAC947D72340D5C0007F4810 /* Controller.swift */,
-				DAE188542343464C00B45C66 /* Create.swift */,
-				DAC947D52340D597007F4810 /* Main.swift */,
-				DAC947D92340D5CE007F4810 /* Navigation.swift */,
-				DAE188562343517300B45C66 /* Session.swift */,
-				DA8E4F22233F6DB2001B2F74 /* Assets.xcassets */,
-				DA68294D2340F96E00FD3ADD /* Localizable.strings */,
-			);
-			path = "argo WatchKit Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +129,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DA1A04BC23438ED20030640C /* PBXTargetDependency */,
+				DA1A04DA234390420030640C /* PBXTargetDependency */,
 			);
 			name = Argo;
 			productName = argo;
@@ -172,11 +146,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				DA1A04BF23438EDC0030640C /* PBXTargetDependency */,
+				DA1A04DE234390480030640C /* PBXTargetDependency */,
 			);
 			name = App;
 			productName = "argo WatchKit App";
-			productReference = DA8E4F08233F6DB0001B2F74 /* App.app */;
+			productReference = DA1A04D8234390190030640C /* App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		DA8E4F16233F6DB1001B2F74 /* Extension */ = {
@@ -193,7 +167,7 @@
 			);
 			name = Extension;
 			productName = "argo WatchKit Extension";
-			productReference = DA8E4F17233F6DB1001B2F74 /* Argo.appex */;
+			productReference = DA1A04C623438FC50030640C /* Argo.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -214,6 +188,7 @@
 					};
 					DA8E4F16233F6DB1001B2F74 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -226,7 +201,7 @@
 				Base,
 			);
 			mainGroup = DA8E4EFD233F6DB0001B2F74;
-			productRefGroup = DA8E4F05233F6DB0001B2F74 /* Products */;
+			productRefGroup = DA8E4EFD233F6DB0001B2F74;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -242,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1A04DF234390500030640C /* App.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +225,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA8E4F11233F6DB1001B2F74 /* Assets.xcassets in Resources */,
-				DA8E4F0F233F6DB0001B2F74 /* Interface.storyboard in Resources */,
+				DA1A04C323438FA00030640C /* Interface.storyboard in Resources */,
+				DA1A04C523438FAA0030640C /* App.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +234,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA8E4F23233F6DB2001B2F74 /* Assets.xcassets in Resources */,
-				DA68294F2340F96E00FD3ADD /* Localizable.strings in Resources */,
+				DA1A04D023438FC60030640C /* Extension.xcassets in Resources */,
+				DA1A04D523438FD40030640C /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,44 +246,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAE188572343517300B45C66 /* Session.swift in Sources */,
-				DAC947D82340D5C0007F4810 /* Controller.swift in Sources */,
-				DAC947DA2340D5CE007F4810 /* Navigation.swift in Sources */,
-				DAE188552343464C00B45C66 /* Create.swift in Sources */,
-				DAC947D62340D597007F4810 /* Main.swift in Sources */,
+				DA1A04D223438FC60030640C /* Controller.swift in Sources */,
+				DA1A04CF23438FC60030640C /* Navigation.swift in Sources */,
+				DA1A04CD23438FC60030640C /* Session.swift in Sources */,
+				DA1A04D123438FC60030640C /* Main.swift in Sources */,
+				DA1A04CE23438FC60030640C /* Create.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DA1A04BC23438ED20030640C /* PBXTargetDependency */ = {
+		DA1A04DA234390420030640C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DA8E4F07233F6DB0001B2F74 /* App */;
-			targetProxy = DA1A04BB23438ED20030640C /* PBXContainerItemProxy */;
+			targetProxy = DA1A04D9234390420030640C /* PBXContainerItemProxy */;
 		};
-		DA1A04BF23438EDC0030640C /* PBXTargetDependency */ = {
+		DA1A04DE234390480030640C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DA8E4F16233F6DB1001B2F74 /* Extension */;
-			targetProxy = DA1A04BE23438EDC0030640C /* PBXContainerItemProxy */;
+			targetProxy = DA1A04DD234390480030640C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DA68294D2340F96E00FD3ADD /* Localizable.strings */ = {
+		DA1A04C123438FA00030640C /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DA68294E2340F96E00FD3ADD /* en */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		DA8E4F0D233F6DB0001B2F74 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA8E4F0E233F6DB0001B2F74 /* Base */,
+				DA1A04C223438FA00030640C /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		DA1A04D323438FD40030640C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA1A04D423438FD40030640C /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,10 +409,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "argo WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = Extension.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,6 +424,8 @@
 				PRODUCT_NAME = Argo;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
@@ -456,10 +435,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "argo WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = Extension.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,6 +450,7 @@
 				PRODUCT_NAME = Argo;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
@@ -482,7 +463,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				IBSC_MODULE = Argo;
-				INFOPLIST_FILE = "argo WatchKit App/Info.plist";
+				INFOPLIST_FILE = App.plist;
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = argo.watch.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,7 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				IBSC_MODULE = Argo;
-				INFOPLIST_FILE = "argo WatchKit App/Info.plist";
+				INFOPLIST_FILE = App.plist;
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = argo.watch.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
