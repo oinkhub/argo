@@ -1,3 +1,6 @@
-Main.add="Add this place";
+Main.add="Add new place";
 Main.title="Navigate to";
 Main.header="Places";
+Create.title="Add current location";
+Create.new="Enter name";
+Create.add="Add";

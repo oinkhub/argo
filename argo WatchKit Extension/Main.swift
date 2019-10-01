@@ -3,11 +3,15 @@ import SwiftUI
 struct Main: View {
     @ObservedObject var user: User
     @ObservedObject var marks: Marks
-    var add: (() -> Void)!
+    @State private var creating = false
+    var add: (String) -> Void
 
     var body: some View {
         List {
-            Add().onTapGesture(perform: add)
+            Add()
+                .onTapGesture {
+                self.creating = true
+            }
             Section(header: Text(.init("Main.header"))) {
                 ForEach(marks.items, id: \.self) { item in
                     NavigationLink(destination: Navigation(user: self.user, mark: item)) {
@@ -15,7 +19,14 @@ struct Main: View {
                     }
                 }
             }
-        }.navigationBarTitle("Main.title")
+        }
+        .navigationBarTitle("Main.title")
+        .sheet(isPresented: $creating) {
+            Create {
+                self.add($0)
+                self.creating = false
+            }
+        }
     }
 }
 private struct Add: View {

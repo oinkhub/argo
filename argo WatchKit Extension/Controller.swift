@@ -6,7 +6,7 @@ final class Controller: WKHostingController<Main>, CLLocationManagerDelegate {
     private let user = User()
     private let marks = Marks()
     
-    override var body: Main { Main(user: user, marks: marks) {
+    override var body: Main { Main(user: user, marks: marks) { _ in
         self.marks.items.append(.init())
     } }
     
