@@ -2,7 +2,7 @@ import SwiftUI
 
 struct Main: View {
     @ObservedObject var user: User
-    @ObservedObject var marks: Marks
+    @ObservedObject var places: Places
     @State private var creating = false
     var add: (String) -> Void
 
@@ -13,7 +13,7 @@ struct Main: View {
                 self.creating = true
             }
             Section(header: Text(.init("Main.header"))) {
-                ForEach(marks.items, id: \.self) { item in
+                ForEach(places.session.items.reversed(), id: \.self) { item in
                     NavigationLink(destination: Navigation(user: self.user, mark: item)) {
                         Mark(mark: item)
                     }
@@ -41,9 +41,9 @@ private struct Add: View {
 }
 
 private struct Mark: View {
-    var mark: Marks.Item
+    var mark: Session.Item
 
     var body: some View {
-        Text("hello")
+        Text(mark.name)
     }
 }

@@ -17,8 +17,8 @@
 		DAC947D82340D5C0007F4810 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC947D72340D5C0007F4810 /* Controller.swift */; };
 		DAC947DA2340D5CE007F4810 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC947D92340D5CE007F4810 /* Navigation.swift */; };
 		DAC947DC2340DE51007F4810 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC947DB2340DE51007F4810 /* User.swift */; };
-		DAC947DE2340E57B007F4810 /* Marks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC947DD2340E57B007F4810 /* Marks.swift */; };
 		DAE188552343464C00B45C66 /* Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE188542343464C00B45C66 /* Create.swift */; };
+		DAE188572343517300B45C66 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE188562343517300B45C66 /* Session.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,8 +77,8 @@
 		DAC947D72340D5C0007F4810 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		DAC947D92340D5CE007F4810 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		DAC947DB2340DE51007F4810 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		DAC947DD2340E57B007F4810 /* Marks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marks.swift; sourceTree = "<group>"; };
 		DAE188542343464C00B45C66 /* Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create.swift; sourceTree = "<group>"; };
+		DAE188562343517300B45C66 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +128,8 @@
 				DAC947D72340D5C0007F4810 /* Controller.swift */,
 				DAE188542343464C00B45C66 /* Create.swift */,
 				DAC947D52340D597007F4810 /* Main.swift */,
-				DAC947DD2340E57B007F4810 /* Marks.swift */,
 				DAC947D92340D5CE007F4810 /* Navigation.swift */,
+				DAE188562343517300B45C66 /* Session.swift */,
 				DAC947DB2340DE51007F4810 /* User.swift */,
 				DA8E4F22233F6DB2001B2F74 /* Assets.xcassets */,
 				DA68294D2340F96E00FD3ADD /* Localizable.strings */,
@@ -265,12 +265,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE188572343517300B45C66 /* Session.swift in Sources */,
 				DAC947DC2340DE51007F4810 /* User.swift in Sources */,
 				DAC947D82340D5C0007F4810 /* Controller.swift in Sources */,
 				DAC947DA2340D5CE007F4810 /* Navigation.swift in Sources */,
 				DAE188552343464C00B45C66 /* Create.swift in Sources */,
 				DAC947D62340D597007F4810 /* Main.swift in Sources */,
-				DAC947DE2340E57B007F4810 /* Marks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
