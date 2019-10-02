@@ -4,7 +4,8 @@ import CoreLocation
 
 final class Places: ObservableObject {
     @Published var session = Session()
-    @Published var heading = Double()
+    @Published var heading = 0.0
+    @Published var coordinate = (0.0, 0.0)
     @Published var error = false
     var message = ""
 }
@@ -13,12 +14,17 @@ final class Controller: WKHostingController<Content> {
     fileprivate let places = Places()
     
     override var body: Content {
-        Content(places: places) {
+        Content(places: places, add: {
             var item = Session.Item()
             item.name = $0.isEmpty ? NSLocalizedString("Main.noName", comment: ""): $0
-            self.places.session.items.append(item)
+            item.latitude = self.places.coordinate.0
+            item.longitude = self.places.coordinate.1
+            self.places.session.items.insert(item, at: 0)
             self.places.session.save()
-    } }
+        }) {
+            self.places.session.items.remove(at: $0.first!)
+            self.places.session.save()
+        } }
 }
 
 final class Delegate: NSObject, WKExtensionDelegate, CLLocationManagerDelegate {
@@ -44,12 +50,14 @@ final class Delegate: NSObject, WKExtensionDelegate, CLLocationManagerDelegate {
     }
     
     func locationManager(_: CLLocationManager, didUpdateHeading: CLHeading) {
-        guard didUpdateHeading.headingAccuracy >= 0, didUpdateHeading.trueHeading >= 0 else { return }
-        places.heading = -(didUpdateHeading.trueHeading > 180 ? didUpdateHeading.trueHeading - 360 : didUpdateHeading.trueHeading)
+        guard didUpdateHeading.headingAccuracy >= 0 else { return }
+        places.heading = didUpdateHeading.trueHeading
     }
         
     func locationManager(_: CLLocationManager, didUpdateLocations: [CLLocation]) {
-//        print(didUpdateLocations.first)
+        if let coordinate = didUpdateLocations.first?.coordinate {
+            places.coordinate = (coordinate.latitude, coordinate.longitude)
+        }
     }
         
     func locationManager(_: CLLocationManager, didChangeAuthorization: CLAuthorizationStatus) {

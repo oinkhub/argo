@@ -9,7 +9,7 @@
         <!--Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <hostingController id="3mp-fW-waa" customClass="Controller" customModule="Argo" customModuleProvider="target"/>
+                <hostingController id="3mp-fW-waa" customClass="Controller" customModule="App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="34" y="31"/>
         </scene>
