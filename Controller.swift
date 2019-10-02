@@ -32,7 +32,15 @@ final class Delegate: NSObject, WKExtensionDelegate, CLLocationManagerDelegate {
     private var places: Places { (WKExtension.shared().rootInterfaceController as! Controller).places }
     
     func applicationDidFinishLaunching() {
-        Session.load { self.places.session = $0 }
+        Session.load {
+            self.places.session = $0
+//            var item = Session.Item()
+//            item.name = "Thessaloniki"
+//            item.longitude = 22.952548
+//            item.latitude = 40.617531
+//            self.places.session.items.insert(item, at: 0)
+//            self.places.session.save()
+        }
     }
     
     func applicationDidBecomeActive() {
@@ -51,7 +59,7 @@ final class Delegate: NSObject, WKExtensionDelegate, CLLocationManagerDelegate {
     
     func locationManager(_: CLLocationManager, didUpdateHeading: CLHeading) {
         guard didUpdateHeading.headingAccuracy >= 0 else { return }
-        places.heading = didUpdateHeading.trueHeading
+        places.heading = -didUpdateHeading.trueHeading
     }
         
     func locationManager(_: CLLocationManager, didUpdateLocations: [CLLocation]) {
