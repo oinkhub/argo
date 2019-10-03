@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA008B1E2345D62C001551CD /* Navigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA008B1D2345D62C001551CD /* Navigate.swift */; };
 		DA1A04C323438FA00030640C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1A04C123438FA00030640C /* Interface.storyboard */; };
 		DA1A04C523438FAA0030640C /* App.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1A04C423438FAA0030640C /* App.xcassets */; };
 		DA1A04CD23438FC60030640C /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A04C723438FC50030640C /* Session.swift */; };
@@ -61,6 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA008B1D2345D62C001551CD /* Navigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigate.swift; sourceTree = "<group>"; };
 		DA1A04C223438FA00030640C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		DA1A04C423438FAA0030640C /* App.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = App.xcassets; sourceTree = "<group>"; };
 		DA1A04C623438FC50030640C /* Argo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Argo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 				DA1A04CB23438FC60030640C /* Content.swift */,
 				DA1A04CC23438FC60030640C /* Controller.swift */,
 				DA1A04C823438FC50030640C /* Create.swift */,
+				DA008B1D2345D62C001551CD /* Navigate.swift */,
 				DA1A04C723438FC50030640C /* Session.swift */,
 				DA1A04C423438FAA0030640C /* App.xcassets */,
 				DA1A04CA23438FC50030640C /* Extension.xcassets */,
@@ -247,6 +250,7 @@
 				DA1A04D223438FC60030640C /* Controller.swift in Sources */,
 				DA1A04CD23438FC60030640C /* Session.swift in Sources */,
 				DA1A04D123438FC60030640C /* Content.swift in Sources */,
+				DA008B1E2345D62C001551CD /* Navigate.swift in Sources */,
 				DA1A04CE23438FC60030640C /* Create.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
