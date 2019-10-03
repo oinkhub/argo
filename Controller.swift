@@ -45,6 +45,7 @@ final class Delegate: NSObject, WKExtensionDelegate, CLLocationManagerDelegate {
     
     func applicationDidBecomeActive() {
         manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         manager.startUpdatingHeading()
         
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {

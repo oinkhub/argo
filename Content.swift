@@ -48,6 +48,13 @@ struct Content: View {
 private struct Navigation: View {
     @ObservedObject var places: Places
     var item: Session.Item
+    private var formatter: MeasurementFormatter {
+        let formatter = MeasurementFormatter()
+        formatter.unitStyle = .short
+        formatter.unitOptions = .naturalScale
+        formatter.numberFormatter.maximumFractionDigits = 1
+        return formatter
+    }
     
     var body: some View {
         ZStack {
@@ -92,6 +99,9 @@ private struct Navigation: View {
             .navigationBarTitle(item.name)
             
             Image("heading")
+            
+            Text(formatter.string(from: .init(value: CLLocation(latitude: item.latitude, longitude: item.longitude).distance(from: .init(latitude: places.coordinate.0, longitude: places.coordinate.1)), unit: UnitLength.meters)))
+                .offset(x: 0, y: 25)
         }
     }
 }
